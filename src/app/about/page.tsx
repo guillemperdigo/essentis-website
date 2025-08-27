@@ -8,7 +8,7 @@ export default function About() {
         <li>We prioritize code quality and maintainability</li>
         <li>Data-driven decisions guide our development process</li>
         <li>We deliver on time and within budget</li>
-        <li>Continuous learning keeps us at technology's forefront</li>
+        <li>Continuous learning keeps us at technology&apos;s forefront</li>
       </ul>
     </div>
   )

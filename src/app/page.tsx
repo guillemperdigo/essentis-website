@@ -169,7 +169,7 @@ export default function Home() {
         <div className="cta-content">
           <h2 className="cta-title">Ready to build something amazing?</h2>
           <p className="cta-description">
-            Let's discuss your project and see how we can help you achieve your goals.
+            Let&apos;s discuss your project and see how we can help you achieve your goals.
           </p>
           <Link href="/contact" className="btn-primary large">
             Start Your Project <ArrowRightIcon />
