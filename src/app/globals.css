@@ -740,6 +740,41 @@ body {
   letter-spacing: -0.025em;
 }
 
+/* Language toggle */
+.language-toggle {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-sm);
+  border-radius: var(--border-radius);
+  background: var(--surface-secondary);
+}
+
+.language-current {
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--primary-color);
+  color: white;
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.language-link {
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.language-link:hover {
+  background: var(--surface-tertiary);
+  color: var(--text-primary);
+}
+
 /* About page */
 .about-list {
   list-style: none;

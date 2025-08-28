@@ -1,8 +1,14 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Privacy() {
   return (
     <div className="page">
+      <div className="language-toggle">
+        <span className="language-current">English</span>
+        <Link href="/privacy/de" className="language-link">Deutsch</Link>
+      </div>
+      
       <h1>Privacy Policy</h1>
       <div className="privacy-content">
         <p>
