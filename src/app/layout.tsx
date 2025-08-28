@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <header className="header">
           <div className="container">
             <Link href="/" className="logo">Essentis</Link>
@@ -27,13 +27,11 @@ export default function RootLayout({
           </div>
         </header>
         <main className="main">
-          <div className="container">
-            {children}
-          </div>
+          {children}
         </main>
         <footer className="footer">
           <div className="container">
-            <p>&copy; {new Date().getFullYear()} Essentis</p>
+            <p>&copy; 2024 Essentis</p>
             <div className="footer-links">
               <Link href="/privacy">Privacy</Link>
               <Link href="/imprint">Imprint</Link>

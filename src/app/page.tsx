@@ -28,6 +28,15 @@ const ServerIcon = () => (
   </svg>
 )
 
+const BrainIcon = () => (
+  <svg className="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0-3 3v1a3 3 0 0 0-3 3 3 3 0 0 0 3 3v1a3 3 0 0 0 3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0 3-3v-1a3 3 0 0 0 3-3 3 3 0 0 0-3-3V8a3 3 0 0 0-3-3 3 3 0 0 0-3-3z"></path>
+    <path d="M12 12h.01"></path>
+    <path d="M8 9h.01"></path>
+    <path d="M16 9h.01"></path>
+  </svg>
+)
+
 const ArrowRightIcon = () => (
   <svg className="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -40,7 +49,8 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-content">
+        <div className="container">
+          <div className="hero-content">
           <div className="hero-badge">
             <span>🚀 Professional Software Solutions</span>
           </div>
@@ -60,34 +70,15 @@ export default function Home() {
               Learn More
             </Link>
           </div>
-        </div>
-        <div className="hero-visual">
-          <div className="hero-image-placeholder">
-            <div className="floating-card card-1">
-              <div className="card-content">
-                <div className="metric">99.9%</div>
-                <div className="metric-label">Uptime</div>
-              </div>
-            </div>
-            <div className="floating-card card-2">
-              <div className="card-content">
-                <div className="metric">50+</div>
-                <div className="metric-label">Projects</div>
-              </div>
-            </div>
-            <div className="floating-card card-3">
-              <div className="card-content">
-                <div className="metric">24/7</div>
-                <div className="metric-label">Support</div>
-              </div>
-            </div>
           </div>
+
         </div>
       </section>
 
       {/* Services Section */}
       <section className="services-section">
-        <div className="section-header">
+        <div className="container">
+          <div className="section-header">
           <h2 className="section-title">Our Expertise</h2>
           <p className="section-subtitle">
             Comprehensive solutions across the entire technology stack
@@ -139,12 +130,29 @@ export default function Home() {
               <span className="feature-tag">Monitoring</span>
             </div>
           </div>
+          
+          <div className="service-card">
+            <div className="service-icon-wrapper">
+              <BrainIcon />
+            </div>
+            <h3 className="service-title">Generative AI</h3>
+            <p className="service-description">
+              Build intelligent applications with cutting-edge AI models, from chatbots to content generation systems.
+            </p>
+            <div className="service-features">
+              <span className="feature-tag">LLMs</span>
+              <span className="feature-tag">RAG</span>
+              <span className="feature-tag">Fine-tuning</span>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
 
       {/* Values Section */}
       <section className="values-section">
-        <div className="values-grid">
+        <div className="container">
+          <div className="values-grid">
           <div className="value-item value-fast">
             <div className="value-title">Fast</div>
             <div className="value-description">Reliable delivery</div>
@@ -162,18 +170,21 @@ export default function Home() {
             <div className="value-description">Clear communication</div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* CTA Section */}
       <section className="cta-section">
-        <div className="cta-content">
+        <div className="container">
+          <div className="cta-content">
           <h2 className="cta-title">Ready to build something amazing?</h2>
           <p className="cta-description">
-            Let&apos;s discuss your project and see how we can help you achieve your goals.
+            Let&apos;s discuss your project and help you achieve your goals.
           </p>
           <Link href="/contact" className="btn-primary large">
             Start Your Project <ArrowRightIcon />
           </Link>
+        </div>
         </div>
       </section>
     </>
