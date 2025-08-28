@@ -34,7 +34,7 @@ export default function RootLayout({
             <p>&copy; 2024 Essentis</p>
             <div className="footer-links">
               <Link href="/privacy">Privacy</Link>
-              <Link href="/imprint">Imprint</Link>
+              <Link href="/impressum">Impressum</Link>
             </div>
           </div>
         </footer>
