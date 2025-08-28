@@ -261,6 +261,7 @@ body {
   display: flex;
   gap: var(--space-lg);
   align-items: center;
+  justify-content: center;
 }
 
 /* Buttons */
