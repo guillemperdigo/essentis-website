@@ -12,6 +12,10 @@ export default function Impressum() {
         </p>
         
         <p>
+          <strong>Geschäftsführer:</strong> Tobias Grimm
+        </p>
+        
+        <p>
           <strong>Handelsregister:</strong> Amtsgericht Berlin-Charlottenburg, HRB 121910 B
         </p>
         
